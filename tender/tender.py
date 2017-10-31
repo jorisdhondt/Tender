@@ -21,6 +21,8 @@ class Tender():
 
         model.Lanes = Set(initialize=self.lanes)
         model.Nodes = Set(initialize=self.nodes)
+        model.Quotes = Set(initialize=self.quotes)
+        model.Carriers = Set(initialize=self.quotes)
 
     def solve_pyomo_model(self, solver='glpk', debug_mode=False, maxiter=10):
         
