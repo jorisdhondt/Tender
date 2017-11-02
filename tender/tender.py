@@ -28,7 +28,11 @@ class Tender():
 
         #Parameteers
             #Quotes
-
+        model.Quotes_Carrier = Param(model.Quotes)                   
+		model.Quotes_Lane = Param(model.Quotes)                        
+		model.Quotes_Mode = Param(model.Quotes)
+		model.Quotes_LeadTime =  Param(model.Quotes)
+		model.Quotes_Price = Param(model.Quotes)
 
             #Lanes
         model.Lanes_Nodes = Param(model.Lanes)
